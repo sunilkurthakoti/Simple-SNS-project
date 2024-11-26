@@ -18,7 +18,7 @@ app.post('/send-email', async (req, res) => {
 
     // AWS SNS Publish
     await sns.publish({
-      TopicArn: 'arn:aws:sns:us-east-1:361769568829:node-sns:188b4130-0db4-4733-baad-ee82a65cd232',	// Replace with your SNS TOpic ARN
+      TopicArn: 'arn:aws:sns:us-east-1:361769568829:node-sns',	// Replace with your SNS TOpic ARN
       Message: message,
       Subject: subject || 'Default Subject',
     }).promise();
