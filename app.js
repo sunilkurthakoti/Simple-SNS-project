@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // AWS SNS configuration with IAM role
-AWS.config.region = 'ap-east-1'; 			// Replace with your AWS region
+AWS.config.region = 'us-east-1'; 			// Replace with your AWS region
 const sns = new AWS.SNS();
 
 // Route to handle email sending
